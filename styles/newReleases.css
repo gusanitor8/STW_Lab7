@@ -1,0 +1,35 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+body{
+    background-color: #CBC9AD;
+    font-family: 'Helvetica';  
+    color: #656839;
+    margin: 0;
+    padding: 0;
+}header{
+    background-color: #656839;
+    height: 100px;
+    width: 100%;
+    color: #CBC9AD; 
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+h1{
+    font-size: 36px;
+    border: 2px solid;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+p{
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
