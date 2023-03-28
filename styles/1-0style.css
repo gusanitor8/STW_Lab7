@@ -4,53 +4,12 @@ body{
     color: #CBC9AD;
 }
 
-img.storyImage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figcaption.storyCaption{
-    text-align: center;
-
-}
-
-article.myArticle{
-    width: 50%;
+#cardi{
     margin: 0 auto;
+}
+
+#progress_bar_container{
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    background-color: #CBD0B9;
-    color: #514B23;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-a{
-    text-decoration: none;
-    color: inherit;        
-}
-
-#botones{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-progress{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h1{
-    font-size: 36px;
-    border: 2px solid;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-p{
-    font-size: 16px;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }

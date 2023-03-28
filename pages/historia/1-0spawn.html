@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang = "es">
-    <head>
-        <title>¿?</title>
+    <head>        
+        <script src="../imageCard.js"></script>
         <link rel="icon" href="../../images/icon/dead.svg" type="image/x-icon">
         <link rel="stylesheet" href="../../styles/1-0style.css">
-
-        <figure>
-            <img class = "storyImage" src = "../../images/imagenes-historia/0-0imagen.png" alt = "Dead" width = "300" height = "300">
-            <figcaption class = "storyCaption">Jim en su casa</figcaption>
-        </figure>
-
-        <br>
-
-        <article class = "myArticle">
-            <p>
-                Tu nombre es Jim, eres un hombre de 30 años, casado con una mujer llamada Mary, y tienes un hijo llamado John.
-                En un día habitual como hoy, vas a trabajar a un laboratorio donde hacen experimentos biológicos. 
-                En este lugar tu lideras una investigación enfocada a la manipulación del material genético de diferentes virus. 
-                <br>
-                Actualmente, tu esposa se encuentr muy enferma en cama. Puedes decidir entre quedarte con tu esposa o ir a trabajar 
-                y regresar mas noche.
-            </p>
-        </article>
-
-        <image-card data-title="Hola"></image-card>
-
-        <br>
-
-        <div id = "botones">
-            <a href = "2-1lab.html">Ir a trabajar</a>
-            <br>
-            <a href = "2-2casa.html">Quedarse en casa</a>
-        </div>
-        
-        <br>
-        
-        <progress value="0" max="100">70%</progress>
-
     </head>
+    <body>
+        <title>¿?</title>
+            <image-card
+            id = "cardi"
+            data-title = "Parte 1" 
+            data-image = "../../images/imagenes-historia/0-0imagen.png"
+            data-subtitle = "Jim en su casa"
+            data-description="Tu nombre es Jim, eres un hombre de 30 años, casado con una mujer llamada Mary, y tienes un hijo llamado John.
+            En un día habitual como hoy, vas a trabajar a un laboratorio donde hacen experimentos biológicos. 
+            En este lugar tu lideras una investigación enfocada a la manipulación del material genético de diferentes virus. 
+            Actualmente, tu esposa se encuentr muy enferma en cama. Puedes decidir entre quedarte con tu esposa o ir a trabajar 
+            y regresar mas noche."
+            action1 = "Ir a trabajar"
+            action1-href = "2-1lab.html"
+            action2 = "Quedarse en casa"
+            action2-href = "2-2casa.html"
+            template = "
+                #card{
+                    margin: 0 auto;
+                    font-family: 'Roboto', sans-serif;
+                    border-radius: 10px;                    
+                    width: 600px;
+                    padding: 20px;
+                    position: relative;
+                    background-color: #CBC9AD;
+                }
+
+                #card-image{
+                    width: auto;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                #image1{
+                    width:300px;
+                    border-radius: 10px;
+                }
+
+                #card-title{
+                    color: white;
+                }
+                #card-description{
+                    color: white;
+                }
+                #card-container{
+                    color: white;
+                }
+                #action1{
+                    text-decoration: none;
+                    margin-right:15px;
+                    color: grey;
+                }
+                #action2{
+                    text-decoration: none;
+                    color: grey;
+                }
+
+            "            
+        ></image-card>  
+             
+        <div id = "progress_bar_container">
+            <progress id = "progress_bar" value="0" max="100">70%</progress>
+        </div>
+    </body>
 </html>
