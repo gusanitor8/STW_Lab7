@@ -1,0 +1,19 @@
+@keyframes my-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+
+h1.tittle {
+    animation: my-animation 2s linear infinite;
+    font-size: 30px;
+    font-weight: bold;
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
